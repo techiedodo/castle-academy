@@ -1,0 +1,308 @@
+html, body{
+   overflow-x: hidden;
+ }
+ body {
+   font-family: "Lato", Helvetica, Arial, sans-serif;
+   color:#4A4A4A;
+ }
+ h1, h2, h3, h4, h6 {
+   font-family: "Playfair Display", Helvetica, Arial, sans-serif;
+ }
+ h1 {
+   font-size:66px;
+   line-height: 88px;
+   font-weight: bold;
+   color:#EE5323;
+   margin-bottom: 5px;
+ }
+ h2 {
+   font-size:52px;
+   line-height: 69px;
+   font-weight: bold;
+   color:#EE5323;
+   margin-bottom: 5px;  
+ }
+ h3 {
+    font-size:36px;
+    line-height: 48px;
+    color:#EE5323;
+    font-weight: bold;
+ }
+ h4 {
+    font-size:26px;
+    line-height: 34px;
+    color:#4A4A4A;
+    font-weight: normal;
+ }
+ h5 {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-size:26px;
+    line-height: 30px;
+    color:#FFFFFF;
+    font-weight: bold;
+ }
+
+ p {
+   font-size:22px;
+   line-height: 32px;
+   font-weight: 100;
+ }
+
+
+
+
+/* FONT AWESOME STUFF */
+    
+.fa {
+    color: #FED006;
+    top: 0;
+    left: 0;
+    right: 5px;
+    position: ;
+  }
+
+
+
+/* GRID */
+ .container {
+   margin-right: auto;
+   margin-left: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+   position: relative;
+ }
+
+ /*this is a psuedo class*/
+ .container:before,
+ .container:after {
+   content: " ";
+   display: table;
+ }
+ .container:after {
+   clear: both;
+ }
+ .one-half, .one-third, .one-fourth {
+   width:96%;
+   float:left;
+   position:relative;
+   min-height: 1px;
+   margin:0 2% 20px;
+ }
+
+
+
+ /* Not sure what these do? */
+ @media (min-width: 768px) {
+   .container {
+     width: 750px;
+   }
+ }
+ @media (min-width: 992px) {
+   .container {
+     width: 970px;
+   }
+   .one-half {
+     width:46%;
+   }
+   .one-third {
+     width:29.33333%;
+   }
+   .one-fourth {
+     width:21%;
+   }
+ }
+ @media (min-width: 1200px) {
+   .container {
+     width: 1170px;
+   }
+ }
+ @media tv (min-width: 1920px) {
+   .container {
+     width: 1880px;
+   }
+ }
+
+.main {
+  height: 809px;
+  padding: 20px 0 70px 0;
+  background: #FFFFFF;
+  text-align: left;
+}
+
+/* HEADER */
+
+header {
+  height: 200px;
+  padding: 20px 0 70px 0;
+  background: #FFFFFF 100% 0;
+  background-position: 0 0, 0 0, 1px 1px, 0 100%;
+  text-align: left;
+}
+
+header .wrapper {
+  max-width: 0px
+  padding: 20; 
+  height: inherit;
+  position: left;
+  padding:0 10px;
+  margin:0 auto;
+  float: left;
+ }
+
+.header_nav header_nav_active {}
+
+.header_nav
+
+.site-logo
+
+
+.nav_toggle_menu {
+
+}
+
+.nav_sections {
+  float: right;
+}
+}
+
+.nav_link_program {}
+
+.#program {}
+
+.nav_link_about {}
+
+.#about {}
+
+.nav_link_question {}
+
+.#question {}
+
+.nav_link_contact {}
+
+.#contact{}
+
+.nav_label {}
+
+
+
+
+
+/* HERO */
+
+
+/* this didn't work correctly
+.castle1crop {
+   background: #322740 url("images/Castle1crop.png") top center no-repeat;
+   background: "images/background.png" top center no-repeat;
+   background-size:cover;
+   text-align: left;
+   padding:10em 0;
+*/
+.container{}
+
+.wrapper {}
+
+.castle1crop {}
+
+.container {}
+
+
+
+/* PROGRAMS */
+.programs {
+  height: 801px;
+  padding: 20px 0 70px 0;
+  background: #B3DED6 100%;
+  text-align: left;
+}
+
+.container {}
+
+
+/* ABOUT */
+.about {
+  height: 1000px;
+  padding: 20px 0 70px 0;
+  background: #FFFFFF 100%;
+  text-align: left;
+}
+.container {}
+span class {}
+
+
+/* QUESTIONS */
+.questions {
+  height: 1000px;
+  padding: 20px 0 70px 0;
+  background: #39B54A 100%;
+  text-align: left;
+  clear:both;
+}
+
+.container {}
+.row1_questions {}
+.row1_column
+.row1_qa
+.question
+.fa fa-plus-circle
+.answer
+.row2_questions
+.row2_column
+.row2_qa
+
+
+/* CONTACT */
+.tuition {
+  height: 801px;
+  width: 480px;
+  padding: 20px;
+  background: #B3DED6;
+  text-align: left;
+}
+
+.container {}
+
+.employment {
+  height: 801px;
+  width: 480px;
+  padding: 20px;
+  background: #FFFFFF;
+  text-align: left;
+  text-decoration: #EE5323 bold;
+}
+
+.contactus {
+  height: 801px;
+  width: 480px;
+  padding: 20px;
+  background: #FED006;
+  text-align: left;
+}
+
+.field-item {}
+
+.show-hide-label
+
+.btn {
+   border-radius: 4px;
+   color:#39B54A;
+   font-weight: bold;
+   text-decoration: none;
+   padding:10px 30px;
+   background: #FFFFFF;
+   border: 2px solid #FFFFFF;
+   box-shadow: 0px 2px 0px 0px #000000;
+ }
+
+
+/*FOOTER*/
+footer {
+  height: 100px;
+  padding: 20px;
+  background: #4A4A4A;
+  text-align: center;
+  clear:both;
+}
+
+
+
