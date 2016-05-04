@@ -149,28 +149,41 @@ header .wrapper {
   float: left;
  }
 
-.nav_sections ul
-{
+.nav_sections ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.header_nav header_nav_active {}
-
-.header_nav
-
-.site-logo
-
-
-.nav_toggle_menu {
+.nav_sections li {
+  float: left;
 
 }
+.nav_section a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  font-color: #5C5C5C;
+  font-family: Lato;
+  width: 146px;
+  height: 108px;
 
-.nav_sections {
-  float: right;
 }
+.fa i {
+  display: block;
+  width: 65px;
+  height: 65px;
 }
+
+
+.header_nav_active {}
+
+.header_nav {}
+
+.site-logo {}
+
+.nav_toggle_menu {}
+
 
 .nav_link_program {}
 
