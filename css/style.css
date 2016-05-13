@@ -6,21 +6,21 @@ html, body{
    color:#4A4A4A;
  }
  h1, h2, h3, h4, h6 {
-   font-family: "Playfair Display", Helvetica, Arial, sans-serif;
+    font-family: "Playfair Display", Helvetica, Arial, sans-serif;
  }
  h1 {
-   font-size:66px;
-   line-height: 88px;
-   font-weight: bold;
-   color:#EE5323;
-   margin-bottom: 5px;
+    font-size:66px;
+    line-height: 88px;
+    font-weight: bold;
+    color:#EE5323;
+    margin-bottom: 5px;
  }
  h2 {
-   font-size:52px;
-   line-height: 69px;
-   font-weight: bold;
-   color:#EE5323;
-   margin-bottom: 5px;  
+    font-size:52px;
+    line-height: 69px;
+    font-weight: bold;
+    color:#EE5323;
+    margin-bottom: 5px;  
  }
  h3 {
     font-size:36px;
@@ -37,24 +37,19 @@ html, body{
  h5 {
     font-family: "Lato", Helvetica, Arial, sans-serif;
     font-size: 26px;
-    line-height: 30px;
+    line-height: 26px;
     color:#FFFFFF;
     font-weight: bold;
  }
 
  p {
-   font-size:22px;
-   line-height: 32px;
-   font-weight: 100;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 100;
  }
-
-nav .i {
-  font-size: 85px;
-}
 
 
 /* FONT AWESOME STUFF */
-    
 .fa {
     color: #FED006;
   }
@@ -120,6 +115,10 @@ nav .i {
    }
  }
 
+
+
+
+/* HEADER */
 .main {
   height: 809px;
   padding: 20px 0 70px 0;
@@ -127,15 +126,12 @@ nav .i {
   text-align: left;
 }
 
-
-/* HEADER */
-
 header {
   height: 200px;
   padding: 20px 0 70px 0;
   background: #FFFFFF 100% 0;
   background-position: 0 0, 0 0, 1px 1px, 0 100%;
-  text-align: left;
+  text-align: center;
 }
 
 header .wrapper {
@@ -148,6 +144,10 @@ header .wrapper {
   float: left;
  }
 
+nav .i {
+  font-size: 85px;
+}
+
 
 ul .nav_toggle_menu ul .nav_sections{
     list-style-type: none;
@@ -155,8 +155,11 @@ ul .nav_toggle_menu ul .nav_sections{
     padding: 0;
 }
 
+/* this is the nav bar */
+
 .nav_sections li {
-  float: right;
+  float: left;
+  width: 120px;
 
 }
 .nav_sections a {
@@ -170,10 +173,11 @@ ul .nav_toggle_menu ul .nav_sections{
 
 }
 
-i .fa {
+/* this is the icons bar */
+.nav_sections .fa {
   display: block;
-  width: 85px;
-  height: 85px;
+  font-size: 85px;
+  text-align: center;
 }
 
 nav#nav_toggle_menu {
@@ -188,6 +192,7 @@ nav#nav_toggle_menu ul {
    list-style-type: none;
     margin: 0;
     padding: 0;
+    p: 14px;
 }
 
 nav#nav_toggle_menu a {
@@ -200,37 +205,8 @@ nav#nav_toggle_menu a {
   height: 108px;
 }
 nav#nav_toggle_menu li {
-  float: right;
+
 }
-
-
-.header_nav_active {}
-
-.header_nav {}
-
-.site-logo {}
-
-.nav_toggle_menu {}
-
-
-.nav_link_program {}
-
-.#program {}
-
-.nav_link_about {}
-
-.#about {}
-
-.nav_link_question {}
-
-.#question {}
-
-.nav_link_contact {}
-
-.#contact{}
-
-.nav_label {}
-
 
 
 
@@ -256,16 +232,6 @@ nav#nav_toggle_menu li {
 
 
 
-.container{}
-
-.wrapper {}
-
-.castle1crop {}
-
-.container {}
-
-
-
 /* PROGRAMS */
 .programs {
   height: 801px;
@@ -273,8 +239,6 @@ nav#nav_toggle_menu li {
   background: #B3DED6 100%;
   text-align: left;
 }
-
-.container {}
 
 
 /* ABOUT */
@@ -284,44 +248,46 @@ nav#nav_toggle_menu li {
   background: #FFFFFF 100%;
   text-align: left;
 }
-.container {}
-span class {}
+
+.aboutmenu li {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    width: ;
+    float: left;
+}
 
 
 /* QUESTIONS */
 .questions {
-  height: 1000px;
   padding: 20px 0 70px 0;
   background: #39B54A 100%;
   text-align: left;
-  clear:both;
+  clear: both;
 }
 
-.container {}
-.row1_questions {}
-.row1_column
-.row1_qa
-.question
-.answer
-.row2_questions
-.row2_column
-.row2_qa
+.questions p {
+  font-size: 22px;
+  font-color: #FFFFFF; 
+}
 
 
 /* CONTACT */
-.tuition {
+#tuition {
   height: 801px;
   width: 480px;
   padding: 20px;
-  background-color: #39B54A 100%;
-  text-align: left;
+  background: #B3DED6;
 }
 
-.container {}
+#tuition .fa {
+  font-size: 70px;
+  color: #39B54A;
+  text-align: center;
+  padding-top: 20px
+}
 
-.one-third {}
-
-.employment {
+#employment {
   height: 801px;
   width: 480px;
   padding: 20px;
@@ -330,7 +296,14 @@ span class {}
   text-decoration: #EE5323 bold;
 }
 
-.contactus {
+#employment .fa {
+  font-size: 70px;
+  color: #39B54A;
+  text-align: center;
+  padding-top: 20px
+}
+
+#contactus {
   height: 801px;
   width: 480px;
   padding: 20px;
@@ -338,12 +311,12 @@ span class {}
   text-align: left;
 }
 
-.field-item {}
-
-.show-hide-label
-
-.name
-.email
+#contactus .fa {
+  font-size: 70px;
+  color: #39B54A;
+  text-align: center;
+  padding-top: 20px
+}
 
 .btn {
    border-radius: 4px;
@@ -363,7 +336,7 @@ footer {
   padding: 20px;
   background: #4A4A4A;
   text-align: center;
-  clear:both;
+  clear: both;
 }
 
 
