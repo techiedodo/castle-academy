@@ -302,7 +302,6 @@ span class {}
 .row1_column
 .row1_qa
 .question
-.fa fa-plus-circle
 .answer
 .row2_questions
 .row2_column
@@ -314,7 +313,7 @@ span class {}
   height: 801px;
   width: 480px;
   padding: 20px;
-  background: #B3DED6;
+  background-color: #39B54A 100%;
   text-align: left;
 }
 
@@ -342,6 +341,9 @@ span class {}
 .field-item {}
 
 .show-hide-label
+
+.name
+.email
 
 .btn {
    border-radius: 4px;
