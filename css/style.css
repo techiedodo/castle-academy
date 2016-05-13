@@ -36,7 +36,7 @@ html, body{
  }
  h5 {
     font-family: "Lato", Helvetica, Arial, sans-serif;
-    font-size:26px;
+    font-size: 26px;
     line-height: 30px;
     color:#FFFFFF;
     font-weight: bold;
@@ -48,17 +48,15 @@ html, body{
    font-weight: 100;
  }
 
-
+nav .i {
+  font-size: 85px;
+}
 
 
 /* FONT AWESOME STUFF */
     
 .fa {
     color: #FED006;
-    top: 0;
-    left: 0;
-    right: 5px;
-    position: ;
   }
 
 
@@ -129,6 +127,7 @@ html, body{
   text-align: left;
 }
 
+
 /* HEADER */
 
 header {
@@ -141,7 +140,7 @@ header {
 
 header .wrapper {
   max-width: 0px
-  padding: 20; 
+  padding: 20px; 
   height: inherit;
   position: left;
   padding:0 10px;
@@ -149,17 +148,18 @@ header .wrapper {
   float: left;
  }
 
-.nav_sections ul {
+
+ul .nav_toggle_menu ul .nav_sections{
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
 .nav_sections li {
-  float: left;
+  float: right;
 
 }
-.nav_section a {
+.nav_sections a {
   display: block;
   padding: 8px;
   text-decoration: none;
@@ -169,10 +169,38 @@ header .wrapper {
   height: 108px;
 
 }
-.fa i {
+
+i .fa {
   display: block;
-  width: 65px;
-  height: 65px;
+  width: 85px;
+  height: 85px;
+}
+
+nav#nav_toggle_menu {
+  float: right;
+  display: block;
+  width: 600px;
+  height: 130px;
+
+}
+
+nav#nav_toggle_menu ul {
+   list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav#nav_toggle_menu a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  font-color: #5C5C5C;
+  font-family: Lato;
+  width: 146px;
+  height: 108px;
+}
+nav#nav_toggle_menu li {
+  float: right;
 }
 
 
@@ -291,6 +319,8 @@ span class {}
 }
 
 .container {}
+
+.one-third {}
 
 .employment {
   height: 801px;
