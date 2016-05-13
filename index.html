@@ -47,7 +47,7 @@
         </li>
 
         <li class="nav_link_contact">
-          <a href="#contact" class>
+          <a href="#tuition" class>
             <i class="fa fa-phone"></i>
               <p>Contact Us</p>
           </a>
@@ -60,22 +60,19 @@
 
 <!-- Hero -->
 <body>
-  <main>
+
     <div class="castle">
-      <div class="welcome"> <!-- make white box here -->
-      <!--  <img src="images/Castle1crop.png" class="castle1crop"> this will go into the CSS style sheet instead-->
-          <h1 style="font-size:50px; line-height: 60px; color:#39B54A">Welcome to Castle Academy</h1>
-          <p><strong>Every child needs the right start.</strong> That’s why our teachers have the knowledge and commitment to  be the best. We offer age-appropriate curriculum in a nurturing, enriching environment.</p>
-          <p><strong>773-239-2299</strong>
-          <br>
-          AGES: 2.5 years old to 6 years old
+      <div class="welcome">
+          <h1 style="font-size:50px; line-height: 65px; color:#39B54A">Welcome to <br>Castle Academy<br>of Early Education</h1>
+          <p><strong>Every child needs the right start.</strong><br> That’s why our teachers have the knowledge and commitment to  be the best. We offer age-appropriate curriculum in a nurturing, enriching environment.</p>
+          <p class="phonenumber"><strong>773-239-2299</strong></p>
+          <p>AGES: 2.5 years old to 6 years old
           <br>
           OPEN: 6:30 a.m. to 6:30 p.m., M-F</p>
         </img>
-      
       </div>
-    </nav>
-  </main>
+    </div>
+
  
  <!-- removed this item from the hero 
  <img src="images/Castle1crop.png" class="castle1crop"
@@ -99,7 +96,7 @@
            <p>Castle Academy’s role is to support, guide and enhance the student’s view as a learner by providing a high quality, developmentally appropriate program that links the goals of home, school and community.</p>
   -->
 
- <section id="programs" class="programs">
+ <section id="program" class="programs">
     <nav class="container">
          <h1>Our Programs</h1>
          <h4>Castle Academy offers half-day and full-day options for students ages 2 ½ to 6.</h4>
@@ -162,7 +159,7 @@
    -->
 
  <!-- Common Questions -->
- <section id="questions" class="questions">
+ <section id="question" class="questions">
     <nav class="container">
        <h1>Common Questions</h1>
        <h4>Our frequently asked questions, answered.</h4>
@@ -188,7 +185,7 @@
             
          <h5><i class="fa fa-plus-circle"></i> What is your discipline policy?</h5>
             <p>Castle Academy guidance is always positive and the teachers resolve conflicts through teaching and redirecting.</p>
-=      </div>
+      </div>
 
     </nav>
 </section>
@@ -242,9 +239,10 @@
         <h4>Invest in your child’s future: <br>Castle Academy’s rates</h4>
          <p>Child care is an important decision for you and your family. Tuition costs depend on how many days a week your child is attending, if they eat a lunch, and other factors. For a quote, please email or call us to talk directly with a Castle Academy navigator, so we can assist you in the best way possible.</p>
          <br>
-         <p><strong>773-239-2299</strong>
-         <br>
-         user@castleacademy.com</p>
+          <div class="contactinfo">
+            <i class="fa fa-phone"></i><p class="phonenumber">773-239-2299<br>
+            <i class="fa fa-envelope"></i> user@castleacademy.com</p>
+          </div>
       </div>
     </div>
  </section>
@@ -257,9 +255,9 @@
         <h4>We’re seeking dedicated professionals to teach and inspire our students.</h4>
          <p>Are you searching for a rewarding job opportunity? We offer full-time and part-time positions with flexible hours. Our jobs includes health benefits, discounted child care and education assistance.</p>
          <br>
-         <a href="jobs.html" <p><strong>View our current  job openings here.</strong></p>
-         </a>
-      </div>
+          <a href="jobs.html"><p><strong>View our current  job openings here.</strong></p></a>
+
+    </div>
    </div>
  </section>
 
@@ -270,20 +268,23 @@
         <h2>Contact Us</h2> 
         <h4>Offices hours are 6:30 a.m. to <br>6:30 p.m., M-F. Call or email us for information.</h4>
           
-          <div class="field-item">
-            <label for="name" class="show-hide-label">Name</label>
-          </div>
+          <form>
+              Name:<br>
+             <input type="text" name="name"><br>
+              Email Address:<br>
+             <input type="text" name="emailaddress">
+          </form>
+
           <div>
-            <label for="email" class="show-hide-label">Email address</label>
-          </div>
-          <div>
-            <p>I would like to receive the monthly Castle Academy newsletter.</p>
+            <p>I would like to receive the monthly <br>Castle Academy newsletter.</p>
           </div>
          <a href="send.html" class="btn">SEND</a>
       </div>
     </div>
  </section>
 
+</div>
+</body>
 
 
 <!-- Hiding this for now, some is from the blocbox project
@@ -320,4 +321,3 @@
        </div>
    </div>
  </footer> 
-</body>

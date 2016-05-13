@@ -120,8 +120,8 @@ html, body{
 
 /* HEADER */
 header {
-  height: 200px;
-  padding: 0px 20px 100px 20px;
+  height: 196px;
+  padding: 0px 20px 0px 20px;
   background: #FFFFFF 100% 0;
   background-position: 0;
   text-align: center;
@@ -202,23 +202,25 @@ nav#nav_toggle_menu a {
 
 
 /* HERO */
-.main {
-  height: 809px;
-  padding: 0px 0px 70px 0px;
-  background: #FFFFFF;
-  text-align: left;
+
+
+.castle {
+  height: 800px;
+  background: url("../images/Castle1crop.png") no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 
-/* this didn't work correctly
-.castle1crop {
-   background: #322740 url("images/Castle1crop.png") top center no-repeat;
-   background: "images/background.png" top center no-repeat;
-   background-size:cover;
-   text-align: left;
-   padding:10em 0;
-*/
-
+.welcome {
+  height: 600px;
+  width: 500px;
+  padding: 40px;
+  margin: 0px 0 0 800px;
+  text-align: left;
+  background: #FFFFFF;
+  vertical-align: text-bottom;
+}
 
 
 /* PROGRAMS */
@@ -270,12 +272,33 @@ nav#nav_toggle_menu a {
   margin: 0;
 }
 
+/*Icon Size*/
 #tuition .fa {
-  font-size: 70px;
+  display: block;
+  font-size: 65px;
   color: #39B54A;
   text-align: center;
-  padding-top: 20px
+  padding: 20px 20px 0px 20px;
 }
+
+.contactinfo {
+  display: block;
+  font-size: 24px;
+  color: #EE5323;
+  text-align: left;
+  padding-right: 5px;
+}
+.phonenumber {
+  font-family: Montserrat;
+  font-style: bold;
+  color: #EE5323;
+}
+
+/* don't need this right now
+#tuition p {
+  font-weight: bold;
+}
+*/
 
 #employment {
   height: 800px;
@@ -287,12 +310,21 @@ nav#nav_toggle_menu a {
   margin: 0;
 }
 
+/*Icon Size*/
 #employment .fa {
-  font-size: 70px;
-  color: #39B54A;
+  display: block;
+  font-size: 65px;
+  color: #B3DED6;
   text-align: center;
-  padding-top: 20px
+  padding: 20px 20px 0px 20px;
 }
+#employment a {
+  text-decoration: none;
+  text-decoration-color: #EE5323;
+  font-style: bold;
+  font-family: Montserrat;
+}
+
 
 #contactus {
   height: 800px;
@@ -303,12 +335,22 @@ nav#nav_toggle_menu a {
   margin: 0;
 }
 
+/*Icon Size*/
 #contactus .fa {
-  font-size: 70px;
+  display: block;
+  font-size: 65px;
   color: #39B54A;
   text-align: center;
-  padding-top: 20px
+  padding: 20px 20px 0px 20px;
 }
+
+#contactus .name {
+  padding: 10px 100px 10px 100px;
+}
+#contactus .emailaddress {
+  padding: 10px 100px 10px 100px;
+}
+
 
 .btn {
    border-radius: 4px;
@@ -341,8 +383,13 @@ footer {
 
 
 
-Unused in Nav toggle menu
-
+Unused in tuition
+.tuition {
+  box-sizing: border-box;
+  width:100px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
 
     */
