@@ -236,6 +236,14 @@ nav#nav_toggle_menu a {
   text-align: left;
 }
 
+.quotes {
+  font-family: Lato;
+  font-size: 18;
+  color: #EE5323;
+  font-weight: bold;
+  padding:0 20px 0 20px;
+}
+
 
 /* ABOUT */
 .about {
