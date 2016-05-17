@@ -10,21 +10,18 @@ html, body{
  }
  h1 {
     font-size:66px;
-    line-height: 66px;
     font-weight: bold;
     color:#EE5323;
-    margin-bottom: 0px;
  }
  h2 {
     font-size:52px;
-    line-height: 52px;
+    line-height: 50px;
     font-weight: bold;
-    color:#EE5323;
-    margin-bottom: 0px;  
+    color:#EE5323;  
  }
  h3 {
-    font-size:36px;
-    line-height: 36px;
+    font-size: 36px;
+    line-height: 30px;
     color:#EE5323;
     font-weight: bold;
  }
@@ -138,12 +135,16 @@ header {
 
 /*Icons*/
 #nav_toggle_menu {
-  padding: 0px 100px 0px 100px;
+  padding: 0px 80px 0px 0px;
   list-style-type: none;
   margin: 0;
 }
 
-ul .nav_toggle_menu ul .nav_sections{
+.nav_sections ul {
+  display: block;
+  text-decoration: none;
+  color: #4A4A4A;
+  font-size: 18px;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -152,7 +153,6 @@ ul .nav_toggle_menu ul .nav_sections{
 .nav_sections li {
   float: left;
   width: 120px;
-  border-right: 1px solid #EDEDED;
   padding: 10px 25px 0px 0px;
 }
 
@@ -164,29 +164,19 @@ ul .nav_toggle_menu ul .nav_sections{
   text-align: center;
 }
 
-.nav_sections p {
-  display: block;
-  font-family: Playfair;
-  text-decoration: none;
-  color: #4A4A4A;
-  font-size: 18px;
-}
-
 /*Icon Size*/
 .nav_sections .fa {
   display: block;
-  padding: 20px;
+  padding: 0 20px 2px 20px;
   font-size: 65px;
   text-align: center;
+  margin: 10px;
 }
-
 
 nav#nav_toggle_menu {
   float: right;
   display: block;
-  width: 600px;
-  height: 130px;
-
+  padding: 20px;
 }
 
 nav#nav_toggle_menu ul {
@@ -195,17 +185,6 @@ nav#nav_toggle_menu ul {
   padding: 0;
   p: 14px;
 }
-
-nav#nav_toggle_menu a {
-  display: block;
-  padding: 8px;
-  text-decoration: none;
-  font-color: #5C5C5C;
-  font-family: Lato;
-  width: 146px;
-  height: 108px;
-}
-
 
 
 
@@ -218,13 +197,42 @@ nav#nav_toggle_menu a {
 }
 
 .welcome {
-  height: 600px;
-  width: 500px;
-  padding: 40px;
+  width: 440px;
+  padding: 36px;
   margin: 0px 0 0 800px;
   text-align: left;
   background: #FFFFFF;
 }
+
+.welcome ul{
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 100;
+}
+
+.phonenumber {
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 40px;
+  color: #EE5323;
+  font-family: Montserrat;
+}
+
+.welcometo {
+  font-size:50px; 
+  line-height: 65px; 
+  color:#39B54A;
+  padding-bottom: 0px;
+}
+
 
 
 /* PROGRAMS */
@@ -234,12 +242,17 @@ nav#nav_toggle_menu a {
   text-align: left;
 }
 
+.programs {
+
+}
+
 .quotes {
   font-family: Lato;
-  font-size: 18;
+  font-size: 18px;
+  line-height: 22px;
   color: #EE5323;
   font-weight: bold;
-  padding:0 20px 0 20px;
+  padding:0 0px 0 20px;
 }
 
 .bubblegirl {
