@@ -211,12 +211,11 @@ nav#nav_toggle_menu a {
 
 /* HERO */
 .castle {
-  height: 800px;
   background: url("../images/Castle1crop.png") no-repeat;
   background-position: center;
   background-size: cover;
+  padding-top: 80px;
 }
-
 
 .welcome {
   height: 600px;
@@ -230,7 +229,6 @@ nav#nav_toggle_menu a {
 
 /* PROGRAMS */
 .programs {
-  height: 801px;
   padding: 20px 0 70px 0;
   background: #B3DED6 100%;
   text-align: left;
@@ -244,19 +242,30 @@ nav#nav_toggle_menu a {
   padding:0 20px 0 20px;
 }
 
+.bubblegirl {
+  float: right;
+  padding: 20px;
+  margin: 10px;
+}
+
+
 
 /* ABOUT */
 .about {
-  height: 1000px;
   padding: 20px 0 70px 0;
   background: #FFFFFF 100%;
   text-align: left;
 }
 
+.aboutmenu ul {
+    margin: 0;
+    padding: 0;
+}
+
 .aboutmenu li {
     list-style-type: none;
     margin: 0;
-    padding: 0 20px 0px 20px;
+    padding: 0 0px 0px 40px;
     float: left;
     font-family: Montserrat;
     font-size: 20px;
@@ -266,7 +275,12 @@ nav#nav_toggle_menu a {
   list-style: none;
   font-size: 22px;
   line-height: 30px;
+}
 
+.leaves {
+  float: left;
+  padding: 20px;
+  margin: 10px;
 }
 
 /* QUESTIONS */
@@ -301,7 +315,7 @@ nav#nav_toggle_menu a {
 }
 
 /*Icon Size*/
-#tuition .fa {
+#tuition .fa-dollar {
   display: block;
   font-size: 65px;
   color: #39B54A;
@@ -310,17 +324,30 @@ nav#nav_toggle_menu a {
 }
 
 .contactinfo {
-  display: block;
-  font-size: 24px;
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: bold;
   color: #EE5323;
+  padding: 0;
+  margin: 0;
+}
+
+#tuition .fa-phone {
+  font-size: 20px;
+  color: #EE5323; 
+  padding: 0px 5px 0px 0px;
   text-align: left;
-  padding-right: 5px;
 }
-.phonenumber {
-  font-family: Montserrat;
-  font-style: bold;
+
+#tuition .fa-envelope {
+  font-size: 20px;
   color: #EE5323;
+  padding: 0 2px 0px 0px;
+  text-align: left;
 }
+
+
+
 
 /* don't need this right now
 #tuition p {
