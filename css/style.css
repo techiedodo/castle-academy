@@ -15,13 +15,13 @@ html, body{
  }
  h2 {
     font-size:52px;
-    line-height: 50px;
+    line-height: 52px;
     font-weight: bold;
     color:#EE5323;  
  }
  h3 {
     font-size: 36px;
-    line-height: 30px;
+    line-height: 36px;
     color:#EE5323;
     font-weight: bold;
  }
@@ -57,8 +57,8 @@ html, body{
  .container {
    margin-right: auto;
    margin-left: auto;
-   padding-left: 15px;
-   padding-right: 15px;
+   padding-left: 0px;
+   padding-right: 0px;
    position: relative;
  }
 
@@ -197,8 +197,8 @@ nav#nav_toggle_menu ul {
 }
 
 .welcome {
-  width: 440px;
-  padding: 36px;
+  width: 430px;
+  padding: 30px;
   margin: 0px 0 0 800px;
   text-align: left;
   background: #FFFFFF;
@@ -237,13 +237,9 @@ nav#nav_toggle_menu ul {
 
 /* PROGRAMS */
 .programs {
-  padding: 20px 0 70px 0;
+  padding: 20px 40px 40px 40px;
   background: #B3DED6 100%;
   text-align: left;
-}
-
-.programs {
-
 }
 
 .quotes {
@@ -265,25 +261,31 @@ nav#nav_toggle_menu ul {
 
 /* ABOUT */
 .about {
-  padding: 20px 0 70px 0;
+  padding: 20px 80px 40px 40px;
   background: #FFFFFF 100%;
   text-align: left;
 }
 
-.aboutmenu ul {
-    margin: 0;
-    padding: 0;
+.aboutmenu {
+    margin: 0 40px 40px 0;
+    padding: 0px 40px 0 0;
+    text-align: left;
+    float: left;
 }
 
+.schoolgoals {
+    border-bottom: 10px solid #FED006;
+    font-weight: bold;
+    padding: 0px;
+}
 .aboutmenu li {
     list-style-type: none;
     margin: 0;
-    padding: 0 0px 0px 40px;
+    padding: 0 90px 0px 0px;
     float: left;
     font-family: Montserrat;
     font-size: 20px;
 }
- 
 .goals {
   list-style: none;
   font-size: 22px;
@@ -292,13 +294,14 @@ nav#nav_toggle_menu ul {
 
 .leaves {
   float: left;
-  padding: 20px;
-  margin: 10px;
+  padding: 0px 10px 0px 0px;
+  margin: 10px 20px 0px 0px;
 }
+
 
 /* QUESTIONS */
 .questions {
-  padding: 20px 0 0px 0;
+  padding: 40px 0 40px 0;
   background: #39B54A 100%;
   text-align: left;
   clear: both;
@@ -318,16 +321,20 @@ nav#nav_toggle_menu ul {
 }
 
 
-/* CONTACT */
+/* CONTACT SECTION */
+/*TUITION*/
 #tuition {
-  height: 800px;
   width: 480px;
-  padding:20px;
-  background: #B3DED6;
+  height: 700px;
+  float: left;
+
+}
+.tuition {
+  background: #B3DED6 100%;
+  padding: 40px;
   margin: 0;
 }
 
-/*Icon Size*/
 #tuition .fa-dollar {
   display: block;
   font-size: 65px;
@@ -344,14 +351,12 @@ nav#nav_toggle_menu ul {
   padding: 0;
   margin: 0;
 }
-
 #tuition .fa-phone {
   font-size: 20px;
   color: #EE5323; 
   padding: 0px 5px 0px 0px;
   text-align: left;
 }
-
 #tuition .fa-envelope {
   font-size: 20px;
   color: #EE5323;
@@ -361,24 +366,19 @@ nav#nav_toggle_menu ul {
 
 
 
-
-/* don't need this right now
-#tuition p {
-  font-weight: bold;
-}
-*/
-
+/*EMPLOYMENT*/
 #employment {
-  height: 800px;
   width: 480px;
-  padding: 20px;
-  background: #FFFFFF;
-  text-align: left;
-  text-decoration: #EE5323 bold;
-  margin: 0;
+  height: 700px;
+  float: left;
 }
 
-/*Icon Size*/
+.employment {
+  background: #FFFFFF;
+  padding: 40px;
+  margin: 0px;
+  text-decoration: #EE5323 bold;
+}
 #employment .fa {
   display: block;
   font-size: 65px;
@@ -394,16 +394,18 @@ nav#nav_toggle_menu ul {
 }
 
 
+/*CONTACT*/
 #contactus {
-  height: 800px;
   width: 480px;
-  padding: 20px;
+  height: 700px;
+  float: right;
+}
+.contactus {
   background: #FED006;
-  text-align: left;
-  margin: 0;
+  padding: 40px;
+  margin: 0px;
 }
 
-/*Icon Size*/
 #contactus .fa {
   display: block;
   font-size: 65px;
@@ -412,6 +414,20 @@ nav#nav_toggle_menu ul {
   padding: 20px 20px 0px 20px;
 }
 
+input {
+    display: block;
+    width: 100%;
+    font-family: 'Gotham_SSm_4r',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 21px;
+    line-height: 1.3125rem;
+    color: #586062;
+    border: 0;
+    border-radius: 3px;
+    outline: none;
+    padding: 12px 10px 10px;
+}
 #contactus .name {
   padding: 10px 100px 10px 100px;
 }
@@ -419,6 +435,10 @@ nav#nav_toggle_menu ul {
   padding: 10px 100px 10px 100px;
 }
 
+.monthlynewsletter {
+  padding: 20px;
+  margin: 20px;
+ }
 
 .btn {
    border-radius: 4px;
@@ -427,11 +447,12 @@ nav#nav_toggle_menu ul {
    font-size: 20px;
    text-decoration: none;
    padding: 10px 100px 10px 100px;
+   margin: 0px 0 0 0;
    background: #FFFFFF;
    border: 2px solid #FFFFFF;
    box-shadow: 0px 2px 0px 0px #000000;
  }
-
+*/
 
 /*FOOTER*/
 footer {
