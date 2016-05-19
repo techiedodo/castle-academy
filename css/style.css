@@ -78,7 +78,9 @@ html, body{
    min-height: 1px;
    margin:0 2% 20px;
  }
-
+.clearfix {
+  overflow: auto;
+}
 
 
  /* MEDIA SIZES*/
@@ -95,7 +97,8 @@ html, body{
      width:46%;
    }
    .one-third {
-     width:29.33333%;
+/*     width:29.33333%;*/
+       width: 33.33vw
    }
    .one-fourth {
      width:21%;
@@ -322,6 +325,19 @@ nav#nav_toggle_menu ul {
 
 
 /* CONTACT SECTION */
+.contact-section {
+    width: 100vw;
+    height: 100%
+}
+.contact-section, .contact-section section {
+    margin: 0 auto;
+}
+.contact-section section {
+    display: inline-block;
+    height: 100%
+    
+}
+
 /*TUITION*/
 #tuition {
   width: 480px;
@@ -388,6 +404,7 @@ nav#nav_toggle_menu ul {
 }
 #employment a {
   text-decoration: none;
+  -webkit-text-decoration-color: #EE5323;
   text-decoration-color: #EE5323;
   font-style: bold;
   font-family: Montserrat;
