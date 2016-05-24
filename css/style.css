@@ -10,14 +10,17 @@ html, body{
  }
  h1 {
     font-size:66px;
+    line-height: 66px;
     font-weight: bold;
     color:#EE5323;
+    padding-top: 20px;
  }
  h2 {
     font-size:52px;
     line-height: 52px;
     font-weight: bold;
-    color:#EE5323;  
+    color:#EE5323; 
+    padding-top: 10px; 
  }
  h3 {
     font-size: 36px;
@@ -26,10 +29,11 @@ html, body{
     font-weight: bold;
  }
  h4 {
-    font-size:26px;
+    font-size: 26px;
     line-height: 32px;
     color:#4A4A4A;
     font-weight: normal;
+    padding-bottom: 0px;
  }
  h5 {
     font-family: "Lato", Helvetica, Arial, sans-serif;
@@ -78,7 +82,9 @@ html, body{
    min-height: 1px;
    margin:0 2% 20px;
  }
-
+.clearfix {
+  overflow: auto;
+  }
 
 
  /* MEDIA SIZES*/
@@ -96,6 +102,7 @@ html, body{
    }
    .one-third {
      width:29.33333%;
+     /*width: 33.33vw;*/
    }
    .one-fourth {
      width:21%;
@@ -322,17 +329,15 @@ nav#nav_toggle_menu ul {
 
 
 /* CONTACT SECTION */
+
+
+
 /*TUITION*/
 #tuition {
-  width: 480px;
-  height: 700px;
+  box-sizing: border-box;
   float: left;
+  background: #B3DED6;
 
-}
-.tuition {
-  background: #B3DED6 100%;
-  padding: 40px;
-  margin: 0;
 }
 
 #tuition .fa-dollar {
@@ -340,9 +345,8 @@ nav#nav_toggle_menu ul {
   font-size: 65px;
   color: #39B54A;
   text-align: center;
-  padding: 20px 20px 0px 20px;
+  padding: 20px 20px 0px 20px
 }
-
 .contactinfo {
   list-style-type: none;
   font-size: 20px;
@@ -355,30 +359,25 @@ nav#nav_toggle_menu ul {
   font-size: 20px;
   color: #EE5323; 
   padding: 0px 5px 0px 0px;
-  text-align: left;
 }
 #tuition .fa-envelope {
   font-size: 20px;
   color: #EE5323;
   padding: 0 2px 0px 0px;
-  text-align: left;
 }
 
 
 
 /*EMPLOYMENT*/
 #employment {
-  width: 480px;
-  height: 700px;
+  height: auto;
   float: left;
-}
-
-.employment {
   background: #FFFFFF;
   padding: 40px;
   margin: 0px;
   text-decoration: #EE5323 bold;
 }
+
 #employment .fa {
   display: block;
   font-size: 65px;
@@ -388,7 +387,7 @@ nav#nav_toggle_menu ul {
 }
 #employment a {
   text-decoration: none;
-  text-decoration-color: #EE5323;
+  webkit-text-decoration-color: #EE5323;
   font-style: bold;
   font-family: Montserrat;
 }
@@ -396,11 +395,8 @@ nav#nav_toggle_menu ul {
 
 /*CONTACT*/
 #contactus {
-  width: 480px;
-  height: 700px;
-  float: right;
-}
-.contactus {
+  height: auto;
+  clear: all;
   background: #FED006;
   padding: 40px;
   margin: 0px;
@@ -416,8 +412,7 @@ nav#nav_toggle_menu ul {
 
 input {
     display: block;
-    width: 100%;
-    font-family: 'Gotham_SSm_4r',Helvetica,Arial,sans-serif;
+    font-family: 'Lato',Helvetica,Arial,sans-serif;
     font-size: 14px;
     font-size: 0.875rem;
     line-height: 21px;
@@ -429,16 +424,16 @@ input {
     padding: 12px 10px 10px;
 }
 #contactus .name {
-  padding: 10px 100px 10px 100px;
+  padding: 10px 0px 10px 0px;
 }
 #contactus .emailaddress {
-  padding: 10px 100px 10px 100px;
+  padding: 10px 0px 10px 0px;
 }
 
-.monthlynewsletter {
-  padding: 20px;
-  margin: 20px;
- }
+.checkbox {
+  text-align: left;
+  padding-bottom: 20px;
+}
 
 .btn {
    border-radius: 4px;
@@ -451,8 +446,9 @@ input {
    background: #FFFFFF;
    border: 2px solid #FFFFFF;
    box-shadow: 0px 2px 0px 0px #000000;
+   position: absolute;
  }
-*/
+
 
 /*FOOTER*/
 footer {
@@ -460,11 +456,13 @@ footer {
   padding: 20px;
   background: #4A4A4A;
   text-align: center;
-  clear: both;
+  clear: left;
 }
 
 
-/*to use for the button underlining
+
+/*
+to use for the button underlining
     color: #FFFFFF;
     border-bottom: 3px;
     border-bottom-color: white;
@@ -479,7 +477,5 @@ Unused in tuition
   padding-left: 10px;
   padding-right: 10px;
 }
-
-
-    */
+*/
 
