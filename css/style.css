@@ -101,7 +101,7 @@ html, body{
      width:46%;
    }
    .one-third {
-     width:29.33333%;
+     width:28%;
      /*width: 33.33vw;*/
    }
    .one-fourth {
@@ -337,7 +337,7 @@ nav#nav_toggle_menu ul {
   box-sizing: border-box;
   float: left;
   background: #B3DED6;
-
+  padding: 40px;
 }
 
 #tuition .fa-dollar {
