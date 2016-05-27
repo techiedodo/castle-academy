@@ -80,7 +80,7 @@ html, body{
    float:left;
    position:relative;
    min-height: 1px;
-   margin:0 2% 20px;
+
  }
 .clearfix {
   overflow: auto;
@@ -287,8 +287,8 @@ nav#nav_toggle_menu ul {
 }
 .aboutmenu li {
     list-style-type: none;
-    margin: 0;
-    padding: 0 90px 0px 0px;
+    margin: 0 90px 0 0;
+    padding: 0 0px 0px 0px;
     float: left;
     font-family: Montserrat;
     font-size: 20px;
@@ -370,7 +370,7 @@ nav#nav_toggle_menu ul {
 
 /*EMPLOYMENT*/
 #employment {
-  height: auto;
+  box-sizing: border-box;
   float: left;
   background: #FFFFFF;
   padding: 40px;
@@ -395,7 +395,7 @@ nav#nav_toggle_menu ul {
 
 /*CONTACT*/
 #contactus {
-  height: auto;
+  box-sizing: border-box;
   clear: all;
   background: #FED006;
   padding: 40px;
@@ -435,18 +435,28 @@ input {
   padding-bottom: 20px;
 }
 
+[type="checkbox"], [type="radio"] {
+    box-sizing: border-box;
+    padding: 0 10px 0;
+    display: inline;
+}
+
+.checkit {
+  padding: 10px;
+}
 .btn {
+   display: block;
    border-radius: 4px;
    color:#39B54A;
    font-weight: bold;
    font-size: 20px;
    text-decoration: none;
-   padding: 10px 100px 10px 100px;
-   margin: 0px 0 0 0;
+   width: 300px;
+   padding: 10px;
    background: #FFFFFF;
-   border: 2px solid #FFFFFF;
    box-shadow: 0px 2px 0px 0px #000000;
-   position: absolute;
+   text-align: center;
+   top-margin: 10px;
  }
 
 
