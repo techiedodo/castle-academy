@@ -75,12 +75,18 @@ html, body{
  .container:after {
    clear: both;
  }
- .one-half, .one-third, .one-fourth {
+ .one-half, .one-fourth {
    width:96%;
    float:left;
    position:relative;
    min-height: 1px;
 
+ }
+ .one-third {
+  width:100%;
+  float: left;
+  position: relative;
+  min-height: 1px;
  }
 .clearfix {
   overflow: auto;
@@ -101,7 +107,7 @@ html, body{
      width:46%;
    }
    .one-third {
-     width:28%;
+     width:33.3333333%;
      /*width: 33.33vw;*/
    }
    .one-fourth {
@@ -338,7 +344,9 @@ nav#nav_toggle_menu ul {
   float: left;
   background: #B3DED6;
   padding: 40px;
+  min-height:300px;
 }
+
 
 #tuition .fa-dollar {
   display: block;
@@ -376,6 +384,7 @@ nav#nav_toggle_menu ul {
   padding: 40px;
   margin: 0px;
   text-decoration: #EE5323 bold;
+  min-height:300px;
 }
 
 #employment .fa {
@@ -400,6 +409,7 @@ nav#nav_toggle_menu ul {
   background: #FED006;
   padding: 40px;
   margin: 0px;
+  min-height:300px;
 }
 
 #contactus .fa {
@@ -409,6 +419,22 @@ nav#nav_toggle_menu ul {
   text-align: center;
   padding: 20px 20px 0px 20px;
 }
+
+@media (min-width: 768px) {
+   #tuition, #employment, #contactus {
+     min-height: 1030px;
+   }
+ }
+@media (min-width: 1024px) {
+   #tuition, #employment, #contactus {
+     min-height: 940px;
+   }
+ }
+ @media (min-width: 1280px) {
+   #tuition, #employment, #contactus {
+     min-height: 800px;
+   }
+ }
 
 input {
     display: block;
