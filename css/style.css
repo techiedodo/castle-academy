@@ -104,7 +104,7 @@ html, body{
      width: 970px;
    }
    .one-half {
-     width:46%;
+     width:47%;
    }
    .one-third {
      width:33.3333333%;
@@ -130,11 +130,12 @@ html, body{
 
 /* HEADER */
 header {
-  height: 196px;
-  padding: 0px 20px 0px 20px;
-  background: #FFFFFF 100% 0;
-  background-position: 0;
-  text-align: center;
+  padding: 15px;
+  background: #FFFFFF;
+  background-size: 100%;
+  position: absolute;
+  float: left;
+
 }
 
 .hero_content_container {
@@ -146,12 +147,44 @@ header {
   height: inherit;
 }
 
+
+@media (min-width: 768px) {
+   .hero_content_container {
+     min-height: 1030px;
+   }
+ }
+@media (min-width: 1024px) {
+   .hero_content_container {
+     min-height: 940px;
+   }
+ }
+ @media (min-width: 1280px) {
+   .hero_content_container {
+     min-height: 800px;
+   }
+ }
+
 /*Icons*/
 #nav_toggle_menu {
-  padding: 0px 80px 0px 0px;
   list-style-type: none;
   margin: 0;
 }
+
+@media (min-width: 768px) {
+   #nav_toggle_menu {
+     max-height: 1030px;
+   }
+ }
+@media (min-width: 1024px) {
+   #nav_toggle_menu {
+     max-height: 940px;
+   }
+ }
+ @media (min-width: 1280px) {
+   #nav_toggle_menu {
+     max-height: 800px;
+   }
+ }
 
 .nav_sections ul {
   display: block;
@@ -165,7 +198,7 @@ header {
 
 .nav_sections li {
   float: left;
-  width: 120px;
+  width: 110px;
   padding: 10px 25px 0px 0px;
 }
 
@@ -187,9 +220,8 @@ header {
 }
 
 nav#nav_toggle_menu {
-  float: right;
+  float: left;
   display: block;
-  padding: 20px;
 }
 
 nav#nav_toggle_menu ul {
@@ -438,16 +470,19 @@ nav#nav_toggle_menu ul {
 
 input {
     display: block;
-    font-family: 'Lato',Helvetica,Arial,sans-serif;
+    width: 300px;
+    max-height: 40px;
+    min-height: 20px;
+    padding: 10px 0px;
+    margin-top: none;
+    margin-bottom: 10px;
     font-size: 14px;
     font-size: 0.875rem;
     line-height: 21px;
     line-height: 1.3125rem;
     color: #586062;
-    border: 0;
     border-radius: 3px;
     outline: none;
-    padding: 12px 10px 10px;
 }
 #contactus .name {
   padding: 10px 0px 10px 0px;
@@ -456,10 +491,21 @@ input {
   padding: 10px 0px 10px 0px;
 }
 
+
+.checkitform  {
+  padding: 0px;
+  text-align: left;
+  padding-bottom: 20px;
+  border: none;
+  margin: none;
+  display: all;
+}
+/*
 .checkbox {
   text-align: left;
   padding-bottom: 20px;
 }
+*/
 
 [type="checkbox"], [type="radio"] {
     box-sizing: border-box;
@@ -467,9 +513,7 @@ input {
     display: inline;
 }
 
-.checkit {
-  padding: 10px;
-}
+
 .btn {
    display: block;
    border-radius: 4px;
