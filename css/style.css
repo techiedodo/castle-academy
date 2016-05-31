@@ -10,14 +10,17 @@ html, body{
  }
  h1 {
     font-size:66px;
+    line-height: 66px;
     font-weight: bold;
     color:#EE5323;
+    padding-top: 20px;
  }
  h2 {
     font-size:52px;
     line-height: 52px;
     font-weight: bold;
-    color:#EE5323;  
+    color:#EE5323; 
+    padding-top: 10px; 
  }
  h3 {
     font-size: 36px;
@@ -26,10 +29,11 @@ html, body{
     font-weight: bold;
  }
  h4 {
-    font-size:26px;
+    font-size: 26px;
     line-height: 32px;
     color:#4A4A4A;
     font-weight: normal;
+    padding-bottom: 0px;
  }
  h5 {
     font-family: "Lato", Helvetica, Arial, sans-serif;
@@ -71,14 +75,22 @@ html, body{
  .container:after {
    clear: both;
  }
- .one-half, .one-third, .one-fourth {
+ .one-half, .one-fourth {
    width:96%;
    float:left;
    position:relative;
    min-height: 1px;
-   margin:0 2% 20px;
- }
 
+ }
+ .one-third {
+  width:100%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+ }
+.clearfix {
+  overflow: auto;
+  }
 
 
  /* MEDIA SIZES*/
@@ -92,10 +104,12 @@ html, body{
      width: 970px;
    }
    .one-half {
-     width:46%;
+     width:48%;
+     padding-right: 20px;
    }
    .one-third {
-     width:29.33333%;
+     width:33.3333333%;
+     /*width: 33.33vw;*/
    }
    .one-fourth {
      width:21%;
@@ -117,14 +131,17 @@ html, body{
 
 /* HEADER */
 header {
-  height: 196px;
-  padding: 0px 20px 0px 20px;
-  background: #FFFFFF 100% 0;
-  background-position: 0;
-  text-align: center;
+  width: 100%;
+  padding: 15px;
+  background: #FFFFFF;
+  position: absolute;
+  float: left;
+  margin-left:0;
+  margin-right:0;
+
 }
 
-.hero_content_container {
+.header_content_container {
   padding: 20px;
   position: absolute;
   width: 0 auto;
@@ -133,12 +150,44 @@ header {
   height: inherit;
 }
 
+
+@media (min-width: 768px) {
+   .header_content_container {
+     min-height: 1030px;
+   }
+ }
+@media (min-width: 1024px) {
+   .header_content_container {
+     min-height: 940px;
+   }
+ }
+ @media (min-width: 1280px) {
+   .header_content_container {
+     min-height: 800px;
+   }
+ }
+
 /*Icons*/
 #nav_toggle_menu {
-  padding: 0px 80px 0px 0px;
   list-style-type: none;
   margin: 0;
 }
+
+@media (min-width: 768px) {
+   #nav_toggle_menu {
+     max-height: 1030px;
+   }
+ }
+@media (min-width: 1024px) {
+   #nav_toggle_menu {
+     max-height: 940px;
+   }
+ }
+ @media (min-width: 1280px) {
+   #nav_toggle_menu {
+     max-height: 800px;
+   }
+ }
 
 .nav_sections ul {
   display: block;
@@ -152,7 +201,7 @@ header {
 
 .nav_sections li {
   float: left;
-  width: 120px;
+  width: 110px;
   padding: 10px 25px 0px 0px;
 }
 
@@ -174,9 +223,8 @@ header {
 }
 
 nav#nav_toggle_menu {
-  float: right;
+  float: left;
   display: block;
-  padding: 20px;
 }
 
 nav#nav_toggle_menu ul {
@@ -191,17 +239,21 @@ nav#nav_toggle_menu ul {
 /* HERO */
 .castle {
   background: url("../images/Castle1crop.png") no-repeat;
-  background-position: center;
   background-size: cover;
-  padding-top: 80px;
+  padding-top: 15%;
+  margin-top: 50px;
+  clear: all;
 }
 
 .welcome {
-  width: 430px;
-  padding: 30px;
-  margin: 0px 0 0 800px;
+  width: 400px;
+  padding: 2%;
+  margin: 0px 0 0 60%;
   text-align: left;
   background: #FFFFFF;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  border-radius: 4px;
 }
 
 .welcome ul{
@@ -280,8 +332,8 @@ nav#nav_toggle_menu ul {
 }
 .aboutmenu li {
     list-style-type: none;
-    margin: 0;
-    padding: 0 90px 0px 0px;
+    margin: 0 90px 0 0;
+    padding: 0 0px 0px 0px;
     float: left;
     font-family: Montserrat;
     font-size: 20px;
@@ -322,27 +374,26 @@ nav#nav_toggle_menu ul {
 
 
 /* CONTACT SECTION */
+
+
+
 /*TUITION*/
 #tuition {
-  width: 480px;
-  height: 700px;
+  box-sizing: border-box;
   float: left;
-
-}
-.tuition {
-  background: #B3DED6 100%;
+  background: #B3DED6;
   padding: 40px;
-  margin: 0;
+  min-height:300px;
 }
+
 
 #tuition .fa-dollar {
   display: block;
   font-size: 65px;
   color: #39B54A;
   text-align: center;
-  padding: 20px 20px 0px 20px;
+  padding: 20px 20px 0px 20px
 }
-
 .contactinfo {
   list-style-type: none;
   font-size: 20px;
@@ -355,30 +406,26 @@ nav#nav_toggle_menu ul {
   font-size: 20px;
   color: #EE5323; 
   padding: 0px 5px 0px 0px;
-  text-align: left;
 }
 #tuition .fa-envelope {
   font-size: 20px;
   color: #EE5323;
   padding: 0 2px 0px 0px;
-  text-align: left;
 }
 
 
 
 /*EMPLOYMENT*/
 #employment {
-  width: 480px;
-  height: 700px;
+  box-sizing: border-box;
   float: left;
-}
-
-.employment {
   background: #FFFFFF;
   padding: 40px;
   margin: 0px;
   text-decoration: #EE5323 bold;
+  min-height:300px;
 }
+
 #employment .fa {
   display: block;
   font-size: 65px;
@@ -388,7 +435,7 @@ nav#nav_toggle_menu ul {
 }
 #employment a {
   text-decoration: none;
-  text-decoration-color: #EE5323;
+  webkit-text-decoration-color: #EE5323;
   font-style: bold;
   font-family: Montserrat;
 }
@@ -396,14 +443,12 @@ nav#nav_toggle_menu ul {
 
 /*CONTACT*/
 #contactus {
-  width: 480px;
-  height: 700px;
-  float: right;
-}
-.contactus {
+  box-sizing: border-box;
+  clear: all;
   background: #FED006;
   padding: 40px;
   margin: 0px;
+  min-height:300px;
 }
 
 #contactus .fa {
@@ -414,45 +459,83 @@ nav#nav_toggle_menu ul {
   padding: 20px 20px 0px 20px;
 }
 
+@media (min-width: 768px) {
+   #tuition, #employment, #contactus {
+     min-height: 1030px;
+   }
+ }
+@media (min-width: 1024px) {
+   #tuition, #employment, #contactus {
+     min-height: 940px;
+   }
+ }
+ @media (min-width: 1280px) {
+   #tuition, #employment, #contactus {
+     min-height: 800px;
+   }
+ }
+
 input {
     display: block;
-    width: 100%;
-    font-family: 'Gotham_SSm_4r',Helvetica,Arial,sans-serif;
+    width: 300px;
+    max-height: 40px;
+    min-height: 20px;
+    padding: 10px 0px;
+    margin-top: none;
+    margin-bottom: 10px;
     font-size: 14px;
     font-size: 0.875rem;
     line-height: 21px;
     line-height: 1.3125rem;
     color: #586062;
-    border: 0;
     border-radius: 3px;
     outline: none;
-    padding: 12px 10px 10px;
 }
 #contactus .name {
-  padding: 10px 100px 10px 100px;
+  padding: 10px 0px 10px 0px;
 }
 #contactus .emailaddress {
-  padding: 10px 100px 10px 100px;
+  padding: 10px 0px 10px 0px;
 }
 
-.monthlynewsletter {
-  padding: 20px;
-  margin: 20px;
- }
+
+.checkitform  {
+  padding: 0px;
+  text-align: left;
+  padding-bottom: 20px;
+  border: none;
+  margin: none;
+  display: all;
+}
+/*
+.checkbox {
+  text-align: left;
+  padding-bottom: 20px;
+}
+*/
+
+[type="checkbox"], [type="radio"] {
+    box-sizing: border-box;
+    padding: 0 10px 0;
+    display: inline;
+}
+
 
 .btn {
+   display: block;
    border-radius: 4px;
    color:#39B54A;
    font-weight: bold;
    font-size: 20px;
    text-decoration: none;
-   padding: 10px 100px 10px 100px;
-   margin: 0px 0 0 0;
+   width: 300px;
+   padding: 10px;
    background: #FFFFFF;
-   border: 2px solid #FFFFFF;
    box-shadow: 0px 2px 0px 0px #000000;
+   text-align: center;
+   top-margin: 10px;
  }
-*/
+
 
 /*FOOTER*/
 footer {
@@ -460,11 +543,13 @@ footer {
   padding: 20px;
   background: #4A4A4A;
   text-align: center;
-  clear: both;
+  clear: left;
 }
 
 
-/*to use for the button underlining
+
+/*
+to use for the button underlining
     color: #FFFFFF;
     border-bottom: 3px;
     border-bottom-color: white;
@@ -479,7 +564,5 @@ Unused in tuition
   padding-left: 10px;
   padding-right: 10px;
 }
-
-
-    */
+*/
 
