@@ -104,7 +104,8 @@ html, body{
      width: 970px;
    }
    .one-half {
-     width:47%;
+     width:48%;
+     padding-right: 20px;
    }
    .one-third {
      width:33.3333333%;
@@ -130,15 +131,17 @@ html, body{
 
 /* HEADER */
 header {
+  width: 100%;
   padding: 15px;
   background: #FFFFFF;
-  background-size: 100%;
   position: absolute;
   float: left;
+  margin-left:0;
+  margin-right:0;
 
 }
 
-.hero_content_container {
+.header_content_container {
   padding: 20px;
   position: absolute;
   width: 0 auto;
@@ -149,17 +152,17 @@ header {
 
 
 @media (min-width: 768px) {
-   .hero_content_container {
+   .header_content_container {
      min-height: 1030px;
    }
  }
 @media (min-width: 1024px) {
-   .hero_content_container {
+   .header_content_container {
      min-height: 940px;
    }
  }
  @media (min-width: 1280px) {
-   .hero_content_container {
+   .header_content_container {
      min-height: 800px;
    }
  }
@@ -236,17 +239,21 @@ nav#nav_toggle_menu ul {
 /* HERO */
 .castle {
   background: url("../images/Castle1crop.png") no-repeat;
-  background-position: center;
   background-size: cover;
-  padding-top: 80px;
+  padding-top: 15%;
+  margin-top: 50px;
+  clear: all;
 }
 
 .welcome {
-  width: 430px;
-  padding: 30px;
-  margin: 0px 0 0 800px;
+  width: 400px;
+  padding: 2%;
+  margin: 0px 0 0 60%;
   text-align: left;
   background: #FFFFFF;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  border-radius: 4px;
 }
 
 .welcome ul{
